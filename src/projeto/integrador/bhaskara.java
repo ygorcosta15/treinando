@@ -24,7 +24,7 @@ public class bhaskara {
         
         
         System.out.println("Resultado é:  " + a);
-        //tet
+        
     
             
 
