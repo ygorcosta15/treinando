@@ -1,8 +1,8 @@
-package projeto.integrador;
+package EstruturasSequencias;
 
 import java.util.Scanner;
 
-public class bhaskara {
+public class Bhaskara {
 
     public static void main(String[] args) {
         Scanner leitor = new Scanner(System.in);
