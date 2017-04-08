@@ -12,8 +12,8 @@ public class Saudaçao {
         System.out.print("seu nome:  ");
         nome = leitor.next();
 
-        if (nome == "" ) {
-            System.out.printf("ola, %s"+ nome);
+        if (nome == nome) {
+            System.out.printf("ola,  "+ nome );
 
         } else {
             System.out.println("ola mundo.");

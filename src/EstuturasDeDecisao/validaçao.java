@@ -1,4 +1,4 @@
-package EstuturasDeDecisao;
+  package EstuturasDeDecisao;
 
 import java.util.Scanner;
 
