@@ -12,14 +12,14 @@ public class Saudaçao {
         System.out.print("seu nome:  ");
         nome = leitor.next();
 
-        if (nome == nome) {
-            System.out.printf("ola,  "+ nome );
+        if (nome== " ") {
+            System.out.printf("ola mundo.");
 
+            
         } else {
-            System.out.println("ola mundo.");
+            System.out.println("ola,  " + nome );
         }
 
     }
 
 }
-// incompleto......
