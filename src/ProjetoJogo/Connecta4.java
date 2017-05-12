@@ -90,7 +90,7 @@ public class Connecta4 {
                 board[BOTTOM_ROW][column] = 'X';
                 break;
             } else if (board[BOTTOM_ROW][column] == 'X' || board[BOTTOM_ROW][column] == 'O') {
-                if (board[BOTTOM_ROW - counter][column] == '.') { //puts X if blank
+                if (board[BOTTOM_ROW - counter][column] == '.') { 
                     board[BOTTOM_ROW - counter][column] = 'X';
                     break; 
                 }
