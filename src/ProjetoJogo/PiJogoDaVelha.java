@@ -17,8 +17,8 @@ public class PiJogoDaVelha {
 //        String[] Resposta = new String[100];// rrespostas do player 2.
 
         tabuleiro();
-        String[] entrada = entradaDeDados();
-        limpaTela();//GAMBIARRA PARA LIMPAR A TELA APÓS A ENTRADA DA PALAVRA OU FRASE PARA QUE O PLAYER 2 NÃO INDENTIFIQUE.
+       entradaDeDados();
+       
 
     }
 
@@ -48,6 +48,7 @@ public class PiJogoDaVelha {
     public static String[] entradaDeDados() {
         Scanner leitor = new Scanner(System.in);
 
+        
         String[] Frase = new String[100];
         int confirmar = 1;
         boolean valido = false;
@@ -56,7 +57,7 @@ public class PiJogoDaVelha {
 
             System.out.println("\n\n****PLAYER 1 ****");
             System.out.println("\nCertifique-se que o outro jogador nao veja e digite a palavra ou a frase desejada: ");
-            Frase[] = leitor.next();
+            
 
             try {
                 System.out.printf("\n %s,? (PARA CONFIRMAR DIGITE '1' CASO NÃO ESTEJA DIGITE '2' ? ", Arrays.toString(Frase));
@@ -71,8 +72,6 @@ public class PiJogoDaVelha {
         return Frase;
     }
 
-    public static void limpaTela() {
+   
 
-        System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
-    }
 }
