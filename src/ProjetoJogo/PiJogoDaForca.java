@@ -9,16 +9,13 @@ package ProjetoJogo;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class PiJogoDaVelha {
+public class PiJogoDaForca {
 
     public static void main(String[] args) {
         Scanner leitor = new Scanner(System.in);
 
-//        String[] Resposta = new String[100];// rrespostas do player 2.
-
         tabuleiro();
-       entradaDeDados();
-       
+        entradaDeDados();
 
     }
 
@@ -48,30 +45,31 @@ public class PiJogoDaVelha {
     public static String[] entradaDeDados() {
         Scanner leitor = new Scanner(System.in);
 
-        
-        String[] Frase = new String[100];
+        String[] frase = new String[100];
+
         int confirmar = 1;
         boolean valido = false;
 
-        do {
+        for (int i = 0; i < 100; i++) {
+       
+        }
+            do {
+                try {
+                    System.out.println("\n\n****PLAYER 1 ****");
+                    System.out.println("\nCertifique-se que o outro jogador nao veja e digite a palavra ou a frase desejada: ");
+                    frase[5] = leitor.nextLine();
 
-            System.out.println("\n\n****PLAYER 1 ****");
-            System.out.println("\nCertifique-se que o outro jogador nao veja e digite a palavra ou a frase desejada: ");
-            
+                    System.out.printf("\n %s,? (PARA CONFIRMAR DIGITE '1' CASO NÃO ESTEJA DIGITE '2' ? ", Arrays.toString(frase));
+                    confirmar = leitor.nextInt();
+                    valido = true;
+                } catch (NumberFormatException ex) {
+                    System.out.println("ERRO!!! TENTE NOVAMENTE");
+                }
 
-            try {
-                System.out.printf("\n %s,? (PARA CONFIRMAR DIGITE '1' CASO NÃO ESTEJA DIGITE '2' ? ", Arrays.toString(Frase));
-                confirmar = leitor.nextInt();
-                valido = true;
-            } catch (NumberFormatException ex) {
-                System.out.println("ERRO!!! TENTE NOVAMENTE");
-            }
+            } while (confirmar != 1);
 
-        } while (confirmar != 1);
+            return frase;
+       
 
-        return Frase;
     }
-
-   
-
 }
